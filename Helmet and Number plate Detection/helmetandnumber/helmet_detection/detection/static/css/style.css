@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background {
+    background-image: url("/static/images/background.jpg"); /* update filename */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.6);  /* dark overlay for readability */
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Detection Result{% endblock %}
+
+{% block content %}
+<h1>Helmet and Number Plate Detection Result</h1>
+
+<!-- Streaming output -->
+<img src="{% url 'stream' filename %}" alt="Detection Stream" class="responsive-video" width="640" height="480" style="border: 3px solid #00bcd4; border-radius: 8px; margin-top: 20px;">
+
+<form action="{% url 'stop' %}" method="get">
+    <button type="submit">Stop Detection</button>
+</form>
+
+<p><a href="{% url 'upload' %}" style="color: #00bcd4;">Upload another video</a></p>
+{% endblock %}
